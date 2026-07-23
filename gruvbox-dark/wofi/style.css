@@ -1,0 +1,47 @@
+window {
+    font-family: "Lilex", monospace;
+    font-size: 18px;
+    background-color: #282828;
+    border: 2px solid #ebdbb2;
+    border-radius: 0px;
+    color: #ebdbb2;
+}
+
+#input {
+    margin-bottom: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #ebdbb2;
+    box-shadow: none;
+}
+
+#inner-box {
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 10px;
+    padding: 5px;
+    background-color: transparent;
+}
+
+#entry {
+    border-radius: 8px;
+    color: #ebdbb2;
+}
+
+#entry:selected {
+    background: #282828;
+    border: 2px solid #ebdbb2;
+    border-radius: 0px;
+    outline: none;
+}
+
+#entry:selected #text {
+    color: #ebdbb2;
+}
+
+#text {
+    margin-left: 3px;
+}

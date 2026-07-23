@@ -1,0 +1,60 @@
+{
+    "height": 26,
+    "position": "bottom",
+    "margin-top": 2,
+
+    "modules-left": ["clock", "wireplumber"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": [
+	"cpu",
+	"disk",
+	"memory",
+	"battery",
+	"network",
+    ],
+
+    "hyprland/workspaces": {
+	"format": "{icon}",
+	"format-icons": {
+	    "active": "",
+	    "default": "",
+	},
+	"persistent-workspaces": {
+	    "HDMI-A-1": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+	    "eDP-1": [10],
+	}
+    },
+
+    "clock": {
+	"interval": 1,
+	"format": "{:%H:%M:%S}",
+	"format-alt": "{0:%B} | {0:%A} | {0:%D}",
+    },
+
+    "network": {
+	"format": "IP: <span color=\"#ebdbb2\">{ipaddr}</span>",
+    },
+
+    "battery": {
+	"format": "BAT: <span color=\"#ebdbb2\">{capacity}%</span>",
+    },
+
+    "memory": {
+	"interval": 1,
+	"format": "RAM: <span color=\"#ebdbb2\">{used}GB</span>",
+    },
+
+    "disk": {
+	"format": "DISK: <span color=\"#ebdbb2\">{used}</span>",
+    },
+
+    "wireplumber": {
+	"format": "SPK: <span color=\"#ebdbb2\">{volume}%</span>",
+	"format-muted": "SPK: <span color=\"#ebdbb2\">MUT</span>",
+    },
+
+    "cpu": {
+	"interval": 2,
+	"format": "CPU: <span color=\"#ebdbb2\">{usage}%</span>",
+    }
+}
